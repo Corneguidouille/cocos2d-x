@@ -61,6 +61,9 @@ elseif(LINUX)
 elseif(ANDROID)
   ADD_DEFINITIONS (-DUSE_FILE32API)
   set(PLATFORM_FOLDER android)
+elseif(PSVITA)
+  ADD_DEFINITIONS (-DPSVITA)
+  set(PLATFORM_FOLDER psvita)
 else()
   message( FATAL_ERROR "Unsupported platform, CMake will exit" )
 endif()
@@ -104,6 +107,10 @@ elseif ( WIN32 )
 elseif(ANDROID)
     set(PLATFORM_SPECIFIC_SRC
       proj.android-studio/app/jni/hellocpp/main.cpp
+    )
+elseif(PSVITA)
+    set(PLATFORM_SPECIFIC_SRC
+      proj.psvita/main.cpp
     )
 endif()
 
