@@ -250,11 +250,11 @@ THE SOFTWARE.
 #endif // CC_TARGET_PLATFORM == CC_PLATFORM_WINRT
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_PSVITA)
-#include "platform/psvita/CCApplication-psvita.h"
-#include "platform/psvita/CCGLViewImpl-psvita.h"
-#include "platform/psvita/CCGL-psvita.h"
-#include "platform/psvita/CCStdC-psvita.h"
-#endif // CC_TARGET_PLATFORM == CC_PLATFORM_BLACKBERRY
+    #include "platform/psvita/CCApplication-psvita.h"
+    #include "platform/psvita/CCGLViewImpl-psvita.h"
+    #include "platform/psvita/CCGL-psvita.h"
+    #include "platform/psvita/CCStdC-psvita.h"
+#endif // CC_TARGET_PLATFORM == CC_PLATFORM_PSVITA
 
 // script_support
 #include "base/CCScriptSupport.h"
